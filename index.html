@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <title>日历</title>
+    <link rel="stylesheet" href="css/date.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/datepicker.js"></script>
+</head>
+<body>
+<div class="wj-datepicker-box"></div>
+
+<script>
+    $("div.wj-datepicker-box").datepicker({
+        setDatesArr:["2016-09-27","2016-09-28","2016-10-27","2016-11-27"],
+        signDatesArr:["2016-09-26","2016-10-24","2016-08-15","2016-10-16"]
+    });
+</script>
+</body>
+</html>
