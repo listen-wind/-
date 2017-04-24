@@ -1,0 +1,89 @@
+@charset "UTF-8";
+.wj-datepicker-box {
+    /*外框*/
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.1), 0 1px 7px rgba(0, 0, 0, 0.18);
+    border-radius: 4px;
+    width: 100%;
+}
+
+.wj-datepicker-inner {
+    display: inline-block;
+    width: 240px;
+    vertical-align: top;
+}
+
+.wj-datepicker {
+    width: 100%;
+    display: inline-block;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333333;
+}
+
+.wj-datepicker .wj-datepicker-days {
+    padding: 10px 15px;
+}
+
+.wj-datepicker .wj-datepicker-table {
+    width: 100%;
+}
+
+.wj-datepicker .wj-datepicker-table .week {
+    font-size: 13px;
+    color: #666;
+}
+
+.wj-datepicker .wj-datepicker-table th, .wj-datepicker .wj-datepicker-table td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px dotted #EEEEEE;
+    cursor: pointer;
+}
+
+.wj-datepicker .wj-datepicker-table .day {
+    font-weight: 600;
+}
+
+.wj-datepicker .wj-datepicker-table .day:hover {
+    background: #efefef;
+}
+
+@media (max-width: 720px) {
+    .wj-datepicker .wj-datepicker-table .day:hover {
+        background: none;
+    }
+}
+
+.wj-datepicker .wj-datepicker-table .day.sign {
+    background: #FFBD00;
+}
+
+.wj-datepicker .wj-datepicker-table .day.active {
+    background-color: #ddd;
+}
+
+.wj-datepicker .wj-datepicker-table .day.today {
+    background-color: #0099FE;
+    color: #fff;
+}
+
+.wj-datepicker .wj-datepicker-table .day.old {
+    color: #EBE6E5;
+}
+
+.wj-datepicker .wj-datepicker-table .day.new {
+    color: #EBE6E5;
+}
+
+.wj-datepicker .wj-datepicker-table .day.old.active, .wj-datepicker .wj-datepicker-table .day.new.active {
+    color: #fff;
+}
+
+
+.wj-datepicker .wj-datepicker-table .day.disabled {
+    background: #fff;
+    cursor: not-allowed;
+    color: #EBE6E5;
+}
